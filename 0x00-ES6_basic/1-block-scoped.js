@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 export default function taskBlock(trueOrFalse) {
   var task = false;
   var task2 = true;
