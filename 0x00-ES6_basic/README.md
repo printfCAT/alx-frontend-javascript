@@ -11,4 +11,6 @@ __Contains the following project files:__
 * 9-getFullBudget.js  
 * 10-loops.js  
 * 11-createEmployeesObject.js  
-* 12-createReportObject.js
+* 12-createReportObject.js  
+* 100-createIteratorObject.js  
+* 101-iterateThroughObject.js
