@@ -2,8 +2,7 @@
 export default function guardrail(mathFunction) {
   const arr = [];
   try {
-    const result = mathFunction();
-    arr.push(result);
+    arr.push(mathFunction());
   } catch (error) {
     arr.push(error.message);
   } finally {
