@@ -9,3 +9,4 @@ __Contains the following project files:__
 * 7-load_balancer.js  
 * 8-try.js  
 * 9-try.js
+* 100-await.js
