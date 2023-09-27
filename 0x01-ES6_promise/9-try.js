@@ -1,10 +1,13 @@
 /* eslint-disable linebreak-style */
 export default function guardrail(mathFunction) {
+  const arr = [];
   try {
     const result = mathFunction();
-    const arr = [result, 'Guardrail was processed'];
-    return arr;
+    arr.push(result);
   } catch (error) {
-    return [error.message, 'Guardrail was processed'];
+    arr.push(error.message);
+  } finally {
+    arr.push('Guardrail was processed');
   }
+  return arr;
 }
