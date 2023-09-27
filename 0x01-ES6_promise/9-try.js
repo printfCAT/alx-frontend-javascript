@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
-export default function mathFunction(func) {
+export default function guardrail(mathFunction) {
   try {
-    const result = func();
+    const result = mathFunction();
     const arr = [result, 'Guardrail was processed'];
     return arr;
   } catch (error) {
