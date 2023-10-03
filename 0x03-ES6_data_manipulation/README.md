@@ -9,4 +9,5 @@ __Contains the following project tasks:__
 * 7-has_array_values.js  
 * 8-clean_set.js  
 * 9-groceries_list.js  
-* 10-update_uniq_items.js
+* 10-update_uniq_items.js  
+* 100-weak.js
