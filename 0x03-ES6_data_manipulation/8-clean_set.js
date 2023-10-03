@@ -6,11 +6,17 @@ export default function cleanSet(set, startString) {
       || startString.length === 0) {
     return '';
   }
-  const string = [];
-  for (const str of set) {
-    if (str.startsWith(startString)) {
-      string.push(str.slice(startString.length));
+  let result = '';
+
+  for (const value of set) {
+    if (value.startsWith(startString)) {
+      result += `${value.slice(startString.length)}-`;
     }
   }
-  return string.join('-');
+
+  if (result.endsWith('-')) {
+    result = result.slice(0, -1);
+  }
+
+  return result;
 }
