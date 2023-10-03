@@ -1,16 +1,13 @@
 /* eslint-disable linebreak-style */
 export default function cleanSet(set, startString) {
-  if (startString === '') {
+  if (startString.length === 0) {
     return '';
   }
-  let string = '';
+  const string = [];
   for (const str of set) {
     if (str.startsWith(startString)) {
-      string += `${str.slice(startString.length)}-`;
+      string.push(str.slice(startString.length));
     }
   }
-  if (string.endsWith('-')) {
-    string = string.slice(0, -1);
-  }
-  return string;
+  return string.join('-');
 }
