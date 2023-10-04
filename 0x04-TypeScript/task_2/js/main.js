@@ -34,6 +34,16 @@ function createEmployee(salary) {
         return new Director();
     }
 }
-console.log(createEmployee(200));
-console.log(createEmployee(1000));
-console.log(createEmployee('$500'));
+function isDirector(employee) {
+    return "workDirectorTasks" in employee;
+}
+function executeWork(employee) {
+    if (isDirector(employee)) {
+        employee.workDirectorTasks();
+    }
+    else {
+        employee.workTeacherTasks();
+    }
+}
+executeWork(createEmployee(200));
+executeWork(createEmployee(1000));
