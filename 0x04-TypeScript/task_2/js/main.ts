@@ -58,5 +58,12 @@ function executeWork(employee: Director | Teacher) {
     }
 }
 
-executeWork(createEmployee(200));
-executeWork(createEmployee(1000));
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass: "Math" | "History"): string {
+    if (todayClass === "Math") {
+        return 'Teaching Math';
+    } else {
+        return 'Teaching History';
+    }
+}

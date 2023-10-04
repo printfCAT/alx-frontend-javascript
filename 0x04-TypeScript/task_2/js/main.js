@@ -45,5 +45,11 @@ function executeWork(employee) {
         employee.workTeacherTasks();
     }
 }
-executeWork(createEmployee(200));
-executeWork(createEmployee(1000));
+function teachClass(todayClass) {
+    if (todayClass === "Math") {
+        return 'Teaching Math';
+    }
+    else {
+        return 'Teaching History';
+    }
+}
